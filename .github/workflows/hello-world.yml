@@ -1,0 +1,20 @@
+name: hello-world
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        type: string
+        description: 'Name you want to say Hello world to'
+        required: true
+
+run-name: Hello world ${{ inputs.name }}!
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Hello world ${{ inputs.name }}!
+        run: Write-Host "Hello world ${{ inputs.name }}!"
+        shell: pwsh
