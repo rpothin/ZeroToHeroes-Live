@@ -1,0 +1,15 @@
+{
+  "EnvironmentVariables": [
+    {
+      "SchemaName": "rpo_LiveEnvVariable",
+      "Value": "Production!!!"
+    }
+  ],
+  "ConnectionReferences": [
+    {
+      "LogicalName": "rpo_ZeroToHeroesLive",
+      "ConnectionId": "9345ac59ac6043e89af6f7bc45b07077",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+    }
+  ]
+}
